@@ -29,3 +29,6 @@ D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.csproj.G
 D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.exe.manifest
 D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.application
 D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form5.resources
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.exe.config
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.exe
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.pdb
