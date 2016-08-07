@@ -1,0 +1,34 @@
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.exe.config
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.exe.manifest
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.application
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.exe
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.pdb
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.csprojResolveAssemblyReference.cache
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.AboutBox1.resources
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Form1.resources
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Form2.resources
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Form3.resources
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Form4.resources
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Properties.Resources.resources
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.csproj.GenerateResource.Cache
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.exe.manifest
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.application
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.exe
+C:\Users\radzio\Documents\Visual Studio 2015\Projects\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.pdb
+D:\kalkulator\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.exe.config
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.exe
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.pdb
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.csprojResolveAssemblyReference.cache
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.AboutBox1.resources
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Form1.resources
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Form3.resources
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Form4.resources
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Properties.Resources.resources
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.csproj.GenerateResource.Cache
+D:\kalkulator\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.exe.manifest
+D:\kalkulator\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.application
+D:\kalkulator\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.exe
+D:\kalkulator\Kalkulator wina\Kalkulator wina\bin\Release\Kalkulator wina.pdb
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.exe.manifest
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator wina.application
+D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Release\Kalkulator_wina.Form5.resources
