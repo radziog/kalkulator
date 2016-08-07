@@ -29,13 +29,10 @@ namespace Kalkulator_wina
             InitializeComponent();
             listView1.View = View.Details;
             listView1.GridLines = true;
-            
             listView1.Columns.Add("Cukier", 120);
             listView1.Columns.Add("Woda", 120);
             wino = frm.wina[ind];
             this.Text ="Wino: "+ wino.nazwa;
-            //zły balling
-           // double baling = wino.historia[0].cukier * 100 / wino.historia[0].woda; // (wino.historia[0].cukier*0.62 + wino.historia[0].woda);//zweryfiokwać
             label2.Text = wino.balling_poczatkowy.ToString("F");
             label6.Text = "";
             label8.Text = "";
@@ -46,7 +43,6 @@ namespace Kalkulator_wina
             {
                 item = new ListViewItem(wino.historia[i].cukier.ToString());
                 item.SubItems.Add(wino.historia[i].woda.ToString());
-
                 listView1.Items.Add(item);
             }
             typ = new List<Typ_wina>();
@@ -95,27 +91,26 @@ namespace Kalkulator_wina
             #region Licz parametry wina; opuszczenie pola do wpisania ballingu koncowego lub przycik oblicz
             char[] tekst = textBox1.Text.ToCharArray();
             //Licz parametry wina
-            if (tekst.Length > 0) { 
-            for (int i = 0; i < tekst.Length; i++)
+            if (tekst.Length > 0)
             {
-                if (tekst[i].Equals('.'))
+                for (int i = 0; i < tekst.Length; i++)
                 {
-                    tekst[i] = ',';
+                    if (tekst[i].Equals('.'))
+                    {
+                        tekst[i] = ',';
+                    }
+                }
+                try
+                {
+                    double blg_end = Convert.ToDouble(new string(tekst));
+                    licz_alk(blg_end);
+                }
+                catch
+                {
+                    MessageBox.Show("Nie prawidłowa wartość w polu Blg", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            try
-            {
-                double blg_end = Convert.ToDouble(new string(tekst));
-                licz_alk(blg_end);
-            }
-            catch
-            {
-
-
-                    MessageBox.Show("Nie prawidłowa wartość w polu Blg", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-                #endregion
-            }
+            #endregion
         }
         private void licz_alk(double blg_end)
         {
