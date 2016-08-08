@@ -26,13 +26,12 @@ namespace Kalkulator_wina
         {
             InitializeComponent();
             listView1.Size = new Size(this.Size.Width - 40, this.Size.Height - 75); //uzależnienie wielkosci listview od wielkosci okna głownego
-       
             listView1.View = View.Details;
             listView1.GridLines = true;
             listView1.FullRowSelect = true;
             listView1.Columns.Add("Nazwa", 120);
             listView1.Columns.Add("Surowiec", 120);
-            listView1.Columns.Add("Data nastawu",120);
+            listView1.Columns.Add("Data nastawu", 120);
             listView1.Refresh();
         }
         public void refresh()
@@ -91,12 +90,12 @@ namespace Kalkulator_wina
                 foreach (Nastaw i in wina)
                 {
                     formattter.Serialize(fs1, i);
-
                 }
             }
             MessageBox.Show("Zapis zakończony sukcesem!", "Syukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
             #endregion
         }
+
         private void s_rd(object sender, CancelEventArgs e)
         {
             #region Odzczyt informacji z pliku
@@ -110,7 +109,6 @@ namespace Kalkulator_wina
                         listView1.Items.Clear();
                     }
                     IFormatter formatter = new BinaryFormatter();
-
                     while (fs.Position < fs.Length)
                     {
                         Nastaw wino = new Nastaw();
@@ -120,15 +118,14 @@ namespace Kalkulator_wina
                     }
                     fs.Close();
                 }
-               
             }
             catch
             {
                 MessageBox.Show("Nie prawidłowy lub uszkodzony plik!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-          
             #endregion
         }
+
         public void dodaj_do_wys(Nastaw wino)
         {
             #region Dodanie nowego nastawu do listy wyświetlanych elementów
@@ -145,11 +142,11 @@ namespace Kalkulator_wina
             ListView.SelectedIndexCollection indeks = listView1.SelectedIndices;
             if (indeks.Count > 0)//sprawdzam czy wybranow wiersz
             {
-                    IEnumerator it = indeks.GetEnumerator();
-                    it.MoveNext();
-                    int i = (int)it.Current;
-                    Form3 Edit = new Form3(this, i);
-                    Edit.Show(this);
+                IEnumerator it = indeks.GetEnumerator();
+                it.MoveNext();
+                int i = (int)it.Current;
+                Form3 Edit = new Form3(this, i);
+                Edit.Show(this);
             }
             else {
                 MessageBox.Show("Nie wybrano elementu do modyfikacji!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -170,7 +167,7 @@ namespace Kalkulator_wina
                     int i = (int)it.Current;
                     wina.Remove(wina[i]);
                     listView1.Items.Remove(listView1.Items[i]);
-               }
+                }
             }
             else {
                 MessageBox.Show("Nie wybrano elementu do usunięcia", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -186,9 +183,9 @@ namespace Kalkulator_wina
             #endregion
         }
     }
-    [Serializable]
 
-    ///<summary>
+    [Serializable]
+    /// <summary>
    /// Przechowuje wszystkie informacje o projektowanym winie/nastawie
     ///  </sumary>
     public class Nastaw
@@ -218,7 +215,6 @@ namespace Kalkulator_wina
         {
             historia = new List<Dodatek>();
             historia[0] = new Dodatek(cukier_poczatkowy, obj);
-           
         }
         public Nastaw(double cukier_poczatkowy, double obj,string nazwa_nastawu, string surowce,  string data_nastawu, string uwagi_inne)
         {
@@ -235,6 +231,7 @@ namespace Kalkulator_wina
         }
         #endregion
     }
+
     [Serializable]
     public class Dodatek
     {

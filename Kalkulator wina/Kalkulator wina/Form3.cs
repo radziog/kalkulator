@@ -13,8 +13,32 @@ namespace Kalkulator_wina
 {
     public partial class Form3 : Form
     {
+        
         private List<Typ_wina> typ;
         private Nastaw wino;
+        private void init_typy()
+        #region Definiowanie zależności typu win od cukru resztkowego
+        {
+            typ = new List<Typ_wina>();
+            typ.Add(new Typ_wina("Wytrawne", 0, 10));
+            typ.Add(new Typ_wina("Półwytrawne", 10, 30));
+            typ.Add(new Typ_wina("Półsłodkie", 30, 60));
+            typ.Add(new Typ_wina("Słodkie", 60, 150));
+            typ.Add(new Typ_wina("Bardzo słodkie", 150, int.MaxValue));
+        }
+        #endregion
+
+        private void init_ui()
+        {
+            listView1.View = View.Details;
+            listView1.GridLines = true;
+            listView1.Columns.Add("Cukier", 120);
+            listView1.Columns.Add("Woda", 120);
+            label6.Text = "";
+            label8.Text = "";
+            label11.Text = "";
+        }
+
         public void dodaj(double blg, double woda)
         {
             wino.historia.Add(new Dodatek(blg, woda));
@@ -23,20 +47,14 @@ namespace Kalkulator_wina
             listView1.Items.Add(item);
             listView1.Refresh();
         }
+
         public Form3(Form1 frm,int ind)
         {
-
             InitializeComponent();
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.Columns.Add("Cukier", 120);
-            listView1.Columns.Add("Woda", 120);
+            init_ui();
             wino = frm.wina[ind];
             this.Text ="Wino: "+ wino.nazwa;
             label2.Text = wino.balling_poczatkowy.ToString("F");
-            label6.Text = "";
-            label8.Text = "";
-            label11.Text = "";
             label4.Text = wino.historia[0].woda.ToString("F");
             ListViewItem item;
             for (int i = 1; i < wino.historia.Count; i++)
@@ -45,12 +63,7 @@ namespace Kalkulator_wina
                 item.SubItems.Add(wino.historia[i].woda.ToString());
                 listView1.Items.Add(item);
             }
-            typ = new List<Typ_wina>();
-            typ.Add(new Typ_wina("Wytrawne", 0, 10));
-            typ.Add(new Typ_wina("Półwytrawne", 10, 30));
-            typ.Add(new Typ_wina("Półsłodkie", 30, 60));
-            typ.Add(new Typ_wina("Słodkie", 60, 150));
-            typ.Add(new Typ_wina("Bardzo słodkie", 150, int.MaxValue));
+            init_typy();
             textBox1.Text = wino.baling_koncowy.ToString();
             richTextBox1.Text = wino.uwagi;
             listView1.ContextMenuStrip = contextMenuStrip1;
