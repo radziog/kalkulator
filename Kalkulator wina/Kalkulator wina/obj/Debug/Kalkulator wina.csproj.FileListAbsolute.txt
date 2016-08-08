@@ -32,3 +32,17 @@ D:\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form5.re
 C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.exe.config
 C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.exe
 C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.pdb
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.exe.manifest
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.application
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.exe
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.pdb
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.csprojResolveAssemblyReference.cache
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.AboutBox1.resources
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form1.resources
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form3.resources
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form4.resources
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form5.resources
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Properties.Resources.resources
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.csproj.GenerateResource.Cache
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.exe.manifest
+C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.application

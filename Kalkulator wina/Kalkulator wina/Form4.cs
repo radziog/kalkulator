@@ -20,6 +20,8 @@ namespace Kalkulator_wina
         {
             InitializeComponent();
             frm3 = frm;
+            
+            label8.Text = ((char) 176).ToString() + "Blg";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,7 +41,8 @@ namespace Kalkulator_wina
             {
                 cukier = Convert.ToDouble(new string(tekst));
             }
-            catch { }
+            catch { MessageBox.Show("Nie prawidłowa wartość w polu cukier.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
             tekst = textBox2.Text.ToCharArray();//woda
 
                 for (int i = 0; i < tekst.Length; i++)
@@ -53,7 +56,7 @@ namespace Kalkulator_wina
             {
                 woda = Convert.ToDouble(new string(tekst));
             }
-            catch { }
+            catch { MessageBox.Show("Nie prawidłowa wartość w polu woda.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             
             tekst = textBox3.Text.ToCharArray();//obj syropu
             if (tekst.Length > 0)
@@ -69,7 +72,7 @@ namespace Kalkulator_wina
                 {
                     woda = Convert.ToDouble(new string(tekst));
                 }
-                catch { }
+                catch { MessageBox.Show("Nie prawidłowa wartość w polu objętość", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
           
 
@@ -89,7 +92,7 @@ namespace Kalkulator_wina
                     temp_c = temp_c / 100;
                     cukier = temp_c / (1 - temp_c + temp_c * 0.62)*woda;
                 }
-               catch { }
+               catch { MessageBox.Show("Nie prawidłowa wartość w polu Balling.","Błąd",MessageBoxButtons.OK,MessageBoxIcon.Error); }
                 
             }
             frm3.dodaj(cukier, woda);
