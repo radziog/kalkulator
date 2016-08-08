@@ -21,15 +21,13 @@ namespace Kalkulator_wina
             InitializeComponent();
             frm3 = frm;
             
-            label8.Text = ((char) 176).ToString() + "Blg";
+            label8.Text = ((char)176).ToString() + "Blg";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             #region Odczytaj wartość i dodaj
-            // Dodać okna błędów w catch
             char[] tekst = textBox1.Text.ToCharArray();// cukier
-            
             for (int i = 0; i < tekst.Length; i++)
             {
                 if (tekst[i].Equals('.'))

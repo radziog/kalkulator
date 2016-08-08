@@ -8,7 +8,7 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="http://radzio-laptop/Kalkulator%20wina/Kalkulator%20wina.application" />
+    <deploymentProvider codebase="http://radzio/Kalkulator%20wina/Kalkulator%20wina.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
@@ -21,7 +21,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3HZhM3Rs0bngie1y3O7SxaD5GMSpZ+rW0EzYt3RSz4w=</dsig:DigestValue>
+        <dsig:DigestValue>LjxZ2uLbEnvb6XCk3D2K7/oRsQFUy97amLdWZvyBiW8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

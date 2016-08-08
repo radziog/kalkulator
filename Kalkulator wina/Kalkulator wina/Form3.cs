@@ -37,7 +37,7 @@ namespace Kalkulator_wina
             label6.Text = "";
             label8.Text = "";
             label11.Text = "";
-            label13.Text=((char)176).ToString() + "Blg";//nr dla symblu stopnie
+            label13.Text=((char)176).ToString() + "Blg";
         }
 
         public void dodaj(double blg, double woda)

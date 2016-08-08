@@ -46,3 +46,20 @@ C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\
 C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.csproj.GenerateResource.Cache
 C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.exe.manifest
 C:\Users\radzio\Documents\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.application
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.exe.config
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.exe
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.pdb
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.exe.manifest
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.application
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.exe
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\bin\Debug\Kalkulator wina.pdb
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.csprojResolveAssemblyReference.cache
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.AboutBox1.resources
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form1.resources
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form3.resources
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form4.resources
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Form5.resources
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator_wina.Properties.Resources.resources
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.csproj.GenerateResource.Cache
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.exe.manifest
+D:\Dokumenty\GitHub\kalkulator\Kalkulator wina\Kalkulator wina\obj\Debug\Kalkulator wina.application
