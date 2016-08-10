@@ -28,7 +28,7 @@ namespace Kalkulator_wina
             double woda = 0;
             char[] tekst;
          
-            tekst = textBox3.Text.ToCharArray();
+            tekst = textBox4.Text.ToCharArray();
             for (int i = 0; i < tekst.Length; i++)
             {
                 if (tekst[i].Equals('.')) //formatowanie liczb zmienno przecinkowych
@@ -45,7 +45,7 @@ namespace Kalkulator_wina
             {
                 MessageBox.Show("Nie prawidłowa wartość w polu balling moszczu", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            tekst = textBox4.Text.ToCharArray();
+            tekst = textBox3.Text.ToCharArray();
             try
             {
                 for (int i = 0; i < tekst.Length; i++)
@@ -104,7 +104,7 @@ namespace Kalkulator_wina
             double cukier = (balling - pop_niecukry) / 100;//kg cukru w 1kg roztworu(moszczu)
             double temp_c = cukier / (1 - cukier + cukier * 0.62);//kg cukru w 1l roztworu(moszczu)
             cukier = temp_c * moszcz + cukier_poczatkowy;//cukier w moszczu + dodany na początku
-            Nastaw wino = new Nastaw(temp_c * moszcz, moszcz, textBox3.Text, textBox4.Text, dateTimePicker1.Text, richTextBox1.Text);
+            Nastaw wino = new Nastaw(temp_c * moszcz, moszcz, textBox1.Text, textBox2.Text, dateTimePicker1.Text, richTextBox1.Text);
             // wino.nie_cukry = pop_niecukry;
             wino.balling_poczatkowy = balling;
             wino.historia.Add(new Dodatek(cukier_poczatkowy, woda)); // cupkier i woda dodane na początku

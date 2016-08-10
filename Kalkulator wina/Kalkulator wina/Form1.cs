@@ -21,6 +21,7 @@ namespace Kalkulator_wina
             */
         private static SaveFileDialog sfd;
         private static OpenFileDialog ofd;
+        private Stream fs;
         public List<Nastaw> wina = new List<Nastaw>();
         public Form1()
         {
@@ -33,6 +34,7 @@ namespace Kalkulator_wina
             listView1.Columns.Add("Surowiec", 120);
             listView1.Columns.Add("Data nastawu", 120);
             listView1.Refresh();
+            
         }
         public void refresh()
         {
@@ -46,7 +48,7 @@ namespace Kalkulator_wina
             sfd.Filter = "Poprzednio zapisane (*.kw)|*.kw|Wszystkie pliki (*.*)|*.*";
             sfd.RestoreDirectory = true;
             sfd.Title = "Zapisz jako";
-            sfd.FileOk += new CancelEventHandler(s_wr);
+            sfd.FileOk += new CancelEventHandler(writeToFile);
             sfd.ShowDialog();
             #endregion
         }
@@ -65,7 +67,7 @@ namespace Kalkulator_wina
             ofd.Filter = "Poprzednio zapisane (*.kw)|*.kw|Wszystkie pliki (*.*)|*.*";
             ofd.RestoreDirectory = true;
             ofd.Title = "Wczytaj";
-            ofd.FileOk += new CancelEventHandler(s_rd);
+            ofd.FileOk += new CancelEventHandler(readFromFile);
             ofd.ShowDialog();
             #endregion
         }
@@ -81,27 +83,27 @@ namespace Kalkulator_wina
             about.ShowDialog();
         }
 
-        private void s_wr(object sender, CancelEventArgs e)
+        private void writeToFile(object sender, CancelEventArgs e)
         {
             #region Zapisywanie informacji do pliku
-            using (Stream fs1 = new FileStream(sfd.FileName, FileMode.OpenOrCreate, FileAccess.Write, FileShare.None))
+            using (fs = new FileStream(sfd.FileName, FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 IFormatter formattter = new BinaryFormatter();
                 foreach (Nastaw i in wina)
                 {
-                    formattter.Serialize(fs1, i);
+                    formattter.Serialize(fs, i);
                 }
             }
             MessageBox.Show("Zapis zakończony sukcesem!", "Syukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
             #endregion
         }
 
-        private void s_rd(object sender, CancelEventArgs e)
+        private void readFromFile(object sender, CancelEventArgs e)
         {
             #region Odzczyt informacji z pliku
             try
             {
-                using (Stream fs = new FileStream(ofd.FileName, FileMode.Open, FileAccess.Read, FileShare.Read))
+                using (fs = new FileStream(ofd.FileName, FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
                     if (wina.Count != 0)
                     {
@@ -167,6 +169,7 @@ namespace Kalkulator_wina
                     int i = (int)it.Current;
                     wina.Remove(wina[i]);
                     listView1.Items.Remove(listView1.Items[i]);
+                    listView1.Refresh();
                 }
             }
             else {
@@ -181,6 +184,23 @@ namespace Kalkulator_wina
             listView1.Size = new Size(this.Size.Width - 40, this.Size.Height - 75);
             listView1.Refresh();
             #endregion
+        }
+
+        private void zapiszJakoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(ofd!=null)
+            {
+                using (fs = new FileStream(ofd.FileName, FileMode.Create, FileAccess.Write, FileShare.Write))
+                {
+                    IFormatter formattter = new BinaryFormatter();
+                    foreach (Nastaw i in wina)
+                    {
+                        formattter.Serialize(fs, i);
+                    }
+                }
+                MessageBox.Show("Zapis zakończony sukcesem!", "Syukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+            }
         }
     }
 

@@ -31,23 +31,23 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -90,6 +90,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wartości początkowe";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(210, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(22, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Blg";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(210, 94);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(19, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "kg";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(210, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(9, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "l";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(210, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(9, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "l";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -98,6 +134,14 @@
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Cukier";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(104, 91);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 12;
+            this.textBox6.Text = "0";
             // 
             // label3
             // 
@@ -117,6 +161,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Balling moszczu";
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(104, 65);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 11;
+            this.textBox5.Text = "0";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -134,14 +186,6 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Nazwa";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(104, 91);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 12;
-            this.textBox6.Text = "0";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dateTimePicker1);
@@ -158,14 +202,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(250, 20);
             this.dateTimePicker1.TabIndex = 7;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(104, 65);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.Text = "0";
             // 
             // groupBox2
             // 
@@ -201,42 +237,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Zapisz";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(210, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(9, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "l";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(210, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(22, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Blg";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(210, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(9, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "l";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(210, 94);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(19, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "kg";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form5
             // 
